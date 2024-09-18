@@ -5,7 +5,6 @@
 
 public enum ProgramState
 {
-    Playing,
     Stop,
     Easy,
     Medium,
@@ -20,9 +19,9 @@ namespace NumbersGame
         {
             while (true)
             {
-                ProgramState difficulty = ProgramState.Playing;
+                ProgramState difficulty;
                 ProgramState.TryParse(
-                    Ask("select difficulty level easy, medium or hard. If you don´t whant to play type stop"),
+                    Ask("select difficulty level Easy, Medium or Hard. If you don´t whant to play type Stop"),
                     out difficulty);
 
                 if (difficulty == ProgramState.Stop)
