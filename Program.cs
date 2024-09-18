@@ -75,7 +75,7 @@ namespace NumbersGame
 
         private static bool Check(int number, int guess)
         {
-            int radom = new Random().Next(1, 3);
+            int radom = new Random().Next(0, 3);
             Console.Clear();
             if (guess == number)
             {
